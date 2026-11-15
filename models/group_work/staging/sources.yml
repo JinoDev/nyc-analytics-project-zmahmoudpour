@@ -1,0 +1,15 @@
+version: 2
+sources:
+  - name: raw
+    description: Raw data loaded from NYC Open Data
+    database: zhino-cis-baruch
+    schema: cis9440_group5
+    tables:
+      - name: source_311_traffic_safety
+        description: |
+          NYC 311 service requests regarding traffic.
+          One row per service request.
+      - name: source_mv_collisions
+        description: |
+          NYC Motor Vehicle collisions reported by NYPD.
+          One row per collision.
